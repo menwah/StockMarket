@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.stockMarket.model.CASSStock" table="cass_stock">
+        <id name="stockCode" type="string" column="stock_code">
+        </id>
+        <property name="stockName">
+            <column name="stock_name" />
+        </property>
+        <property name="marketValue">
+            <column name="market_value" />
+        </property>
+        <property name="cass">
+            <column name="cass" />
+        </property>
+        <property name="nonCass">
+            <column name="non_cass" />
+        </property>
+        <property name="top5Cass">
+            <column name="top_5_cass" />
+        </property>
+        <property name="driness">
+            <column name="driness" />
+        </property>
+        <property name="lastUpdatedTime">
+            <column name="last_updated_time" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.stockMarket.model.XMTrade" table="xm_trade">
+        <id name="id" type="int" column="id">
+            <generator class="increment" />
+        </id>
+        <property name="stockCode">
+            <column name="stock_code" />
+        </property>
+        <property name="stockName">
+            <column name="stock_name" />
+        </property>
+        <property name="marketValue">
+            <column name="market_value" />
+        </property>
+        <property name="executionTime">
+            <column name="execution_Time" />
+        </property>
+        <property name="quantity">
+            <column name="quantity" />
+        </property>
+        <property name="tradeType">
+            <column name="trade_type" />
+        </property>
+        <property name="price">
+            <column name="price" />
+        </property>
+        <property name="amount">
+            <column name="amount" />
+        </property>
+        <property name="executionDate">
+            <column name="execution_date" />
+        </property>
+        <property name="lastUpdatedTime">
+            <column name="last_updated_time" />
+        </property>
+    </class>
+</hibernate-mapping>

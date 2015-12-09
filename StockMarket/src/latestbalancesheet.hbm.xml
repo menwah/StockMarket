@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.stockMarket.model.LatestBalanceSheet" table="latest_balance_sheet">
+        
+
+        <composite-id>
+			<key-property name="stockCode" column="stock_code"  />
+			<key-property name="yearMonth" column="balance_sheet_year_month" />
+		</composite-id>
+
+        <property name="fixedAssets">
+            <column name="fixed_assets" />
+        </property>
+
+        <property name="investments">
+            <column name="investments" />
+        </property>
+        
+        <property name="otherAssets">
+            <column name="other_assets" />
+        </property>
+        
+        <property name="cashOnHand">
+            <column name="cash_on_hand" />
+        </property>
+        
+        <property name="receivables">
+            <column name="receivables" />
+        </property>
+        
+        <property name="investory">
+            <column name="investory" />
+        </property>
+        
+        <property name="otherCurrentAssets">
+            <column name="other_current_assets" />
+        </property>
+        
+        <property name="totalAssets">
+            <column name="total_assets" />
+        </property>
+        
+        <property name="longTermDebt">
+            <column name="long_term_debt" />
+        </property>
+        
+        <property name="otherLongTermLiabilities">
+            <column name="other_long_term_liabilities" />
+        </property>
+        
+        <property name="payables">
+            <column name="payables" />
+        </property>
+        
+        <property name="taxation">
+            <column name="taxation" />
+        </property>
+        
+        <property name="shortTermDebt">
+            <column name="short_term_debt" />
+        </property>
+        
+        <property name="otherCurrentLiabilities">
+            <column name="other_current_liabilities" />
+        </property>
+        
+        <property name="totalLiabilities">
+            <column name="total_liabilities" />
+        </property>
+        
+        <property name="totalEquity">
+            <column name="total_equity" />
+        </property>
+        
+        <property name="totalDebt">
+            <column name="total_debt" />
+        </property>
+        
+        <property name="netAssets">
+            <column name="net_assets" />
+        </property>
+        
+        <property name="intangibleAssets">
+            <column name="intangible_assets" />
+        </property>
+        
+        <property name="currency">
+            <column name="currency" />
+        </property>
+        
+        <property name="unit">
+            <column name="unit" />
+        </property>
+         
+        <property name="lastUpdatedTime">
+            <column name="last_updated_time" /> 
+        </property>
+
+    </class>
+</hibernate-mapping>

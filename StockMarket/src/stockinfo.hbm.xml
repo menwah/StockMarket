@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.stockMarket.model.StockInfo" table="stock_info">
+        <id name="stockCode" type="string" column="stock_code">
+        </id>
+        <property name="stockName">
+            <column name="stock_name" />
+        </property>
+        
+        <property name="listingDate">
+            <column name="listing_date" />
+        </property>
+        
+        <property name="currency">
+            <column name="currency" />
+        </property>
+        
+        <property name="lotSize">
+            <column name="lot_size" />
+        </property>
+        
+        <property name="nav">
+            <column name="nav" />
+        </property>
+        
+        <property name="pe">
+            <column name="pe" />
+        </property>
+        
+        <property name="dividend">
+            <column name="dividend" />
+        </property>
+        
+        <property name="marketValue">
+            <column name="market_value" />
+        </property>
+        <property name="high52Week">
+            <column name="high_52_Week" />
+        </property>
+        <property name="low52Week">
+            <column name="low_52_Week" />
+        </property>
+        <property name="closingPrice">
+            <column name="closing_Price" />
+        </property>
+        <property name="rsi">
+            <column name="rsi" />
+        </property>
+        <property name="lastUpdatedTime">
+            <column name="last_updated_time" />
+        </property>
+    </class>
+</hibernate-mapping>
